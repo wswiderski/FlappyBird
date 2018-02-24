@@ -38,6 +38,7 @@ GameObject:
   - component: {fileID: 4638837617650046}
   - component: {fileID: 212240920716270750}
   - component: {fileID: 114856335862721226}
+  - component: {fileID: 114013046393735544}
   m_Layer: 0
   m_Name: SkyTileSprite
   m_TagString: Untagged
@@ -55,6 +56,7 @@ GameObject:
   - component: {fileID: 4558236207860628}
   - component: {fileID: 212848392037411844}
   - component: {fileID: 114233490825132516}
+  - component: {fileID: 114286651423330798}
   m_Layer: 0
   m_Name: GrassThinSprite
   m_TagString: Untagged
@@ -72,6 +74,7 @@ GameObject:
   - component: {fileID: 4988314617404214}
   - component: {fileID: 212756665135113502}
   - component: {fileID: 114936026507316698}
+  - component: {fileID: 114861681108612948}
   m_Layer: 0
   m_Name: SkyTileSprite (1)
   m_TagString: Untagged
@@ -89,6 +92,7 @@ GameObject:
   - component: {fileID: 4611043677011718}
   - component: {fileID: 212941643457988370}
   - component: {fileID: 114875331295269318}
+  - component: {fileID: 114448079650934564}
   m_Layer: 0
   m_Name: GrassThinSprite (1)
   m_TagString: Untagged
@@ -215,6 +219,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 19, y: 3.7}
   m_EdgeRadius: 0
+--- !u!114 &114013046393735544
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1424114331413906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d7e655eb8de704a92a459050939398, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnPosition: {x: 27, y: 0}
+  endXPosition: -27
 --- !u!114 &114233490825132516
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -228,6 +245,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   respawnPosition: {x: 27, y: -3.5}
   endXPosition: -27
+--- !u!114 &114286651423330798
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1628234815525676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d7e655eb8de704a92a459050939398, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnPosition: {x: 27, y: 0}
+  endXPosition: -27
+--- !u!114 &114448079650934564
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1832499444714840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d7e655eb8de704a92a459050939398, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnPosition: {x: 27, y: 0}
+  endXPosition: -27
 --- !u!114 &114856335862721226
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -237,6 +280,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eadbf1734a1aaa34d8bcc729e55ac8f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnPosition: {x: 27, y: 0}
+  endXPosition: -27
+--- !u!114 &114861681108612948
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1654979115088478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d7e655eb8de704a92a459050939398, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   respawnPosition: {x: 27, y: 0}

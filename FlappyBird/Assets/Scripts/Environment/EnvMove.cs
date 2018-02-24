@@ -2,13 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Move : MonoBehaviour {
+public class EnvMove : MonoBehaviour
+{
 
-    public static float environmentSpeed = 2.5f;
+    public static float environmentSpeed = 2f;
 
     public Vector2 respawnPosition = new Vector2(27f, 0f);
     public float endXPosition = -27f;
 
+    private bool canMove = true;
     private Vector2 startPosition;
 
     private void Awake()
@@ -18,17 +20,29 @@ public class Move : MonoBehaviour {
 
     private void Update()
     {
-        if(transform.position.x <= endXPosition)
+        if (canMove)
         {
-            transform.position = respawnPosition;
+            MoveObject();
+            if (transform.position.x <= endXPosition)
+            {
+                transform.position = respawnPosition;
+            }
         }
-
-        MoveObject();
     }
 
     public void ResetToStartPosition()
     {
         transform.position = startPosition;
+    }
+
+    public void DisableMovement()
+    {
+        canMove = false;
+    }
+
+    public void EnableMovement()
+    {
+        canMove = true;
     }
 
     private void MoveObject()

@@ -37,6 +37,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4519443147889026}
+  - component: {fileID: 114412320938729866}
   m_Layer: 0
   m_Name: Obsticle
   m_TagString: Untagged
@@ -203,6 +204,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.1, y: 0.45}
   m_EdgeRadius: 0
+--- !u!114 &114412320938729866
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1767102140146182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c43c0ff6a9189184681fd012e69cf9a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lowerColumn: {fileID: 1098563610703198}
+  upperColumn: {fileID: 1976863342216924}
+  verticalPositionBorder: {x: -1.5, y: 3}
+  verticalDistance: {x: 1.5, y: 2.2}
 --- !u!212 &212571434378539198
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -236,7 +252,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 2ad05d7e45bf94f049c630bff83ddf42, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -280,7 +296,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 2ad05d7e45bf94f049c630bff83ddf42, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

@@ -19,9 +19,11 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4635028756748208}
+  - component: {fileID: 61926608085260670}
+  - component: {fileID: 61218967812569940}
   m_Layer: 0
   m_Name: Environment
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52,7 +54,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4558236207860628}
   - component: {fileID: 212848392037411844}
-  - component: {fileID: 61805978984646336}
   - component: {fileID: 114233490825132516}
   m_Layer: 0
   m_Name: GrassThinSprite
@@ -87,7 +88,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4611043677011718}
   - component: {fileID: 212941643457988370}
-  - component: {fileID: 61768127689174560}
   - component: {fileID: 114875331295269318}
   m_Layer: 0
   m_Name: GrassThinSprite (1)
@@ -165,55 +165,55 @@ Transform:
   m_Father: {fileID: 4635028756748208}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &61768127689174560
+--- !u!61 &61218967812569940
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1832499444714840}
+  m_GameObject: {fileID: 1227139667866150}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -1.8}
+  m_Offset: {x: 0, y: 6.5}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 27.306667, y: 6.826667}
-    newSize: {x: 27.306667, y: 6.826667}
-    adaptiveTilingThreshold: 0.5
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 27.5, y: 3.3}
+  m_Size: {x: 19, y: 2.2}
   m_EdgeRadius: 0
---- !u!61 &61805978984646336
+--- !u!61 &61926608085260670
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1628234815525676}
+  m_GameObject: {fileID: 1227139667866150}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -1.8}
+  m_Offset: {x: 0, y: -5.5}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 27.306667, y: 6.826667}
-    newSize: {x: 27.306667, y: 6.826667}
-    adaptiveTilingThreshold: 0.5
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 27.5, y: 3.3}
+  m_Size: {x: 19, y: 3.7}
   m_EdgeRadius: 0
 --- !u!114 &114233490825132516
 MonoBehaviour:

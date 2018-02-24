@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Environment
   - Obsticle
+  - Goal
   layers:
   - Default
   - TransparentFX

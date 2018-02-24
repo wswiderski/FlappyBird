@@ -4,28 +4,28 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour {
 
-    public enum GameStages
-    {
-        DEMO, PLAY, GAME_OVER
-    }
+    public PlayerMove player;
+    public PointUpdater pointUpdater;
 
     private static int points = 0;
     private static GameStages gameStage;
 
-    private void Awake()
+    private void Start()
     {
         points = 0;
-        gameStage = GameStages.DEMO;
+        gameStage = GameStages.PLAY;
     }
 
     private void OnDemoStage()
     {
         gameStage = GameStages.DEMO;
+        player.DisableGravity();
     }
 
     private void OnPlayStage()
     {
         gameStage = GameStages.PLAY;
+        player.EnableGravity();
     }
 
     private void OnGameOverStage()
@@ -42,6 +42,7 @@ public class GameManager : MonoBehaviour {
     public static void AddPoint()
     {
         points++;
+        pointUpdater.UpdatePointsText();
     }
 
     public static GameStages GameStage

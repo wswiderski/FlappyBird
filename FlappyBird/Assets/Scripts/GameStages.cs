@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum GameStages {
+public enum GameStages
+{
     DEMO, PLAY, GAME_OVER
 }

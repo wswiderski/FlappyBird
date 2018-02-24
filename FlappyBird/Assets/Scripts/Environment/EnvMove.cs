@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class EnvMove : MonoBehaviour
 {
-
     public static float environmentSpeed = 1.2f;
 
     public Vector2 respawnPosition = new Vector2(27f, 0f);
     public float endXPosition = -27f;
 
-    private bool canMove = true;
     private Vector2 startPosition;
 
     private void Awake()
@@ -20,7 +18,7 @@ public class EnvMove : MonoBehaviour
 
     private void Update()
     {
-        if (canMove)
+        if (GameManager.GameStage != GameStages.GAME_OVER)
         {
             MoveObject();
             if (transform.position.x <= endXPosition)
@@ -33,16 +31,6 @@ public class EnvMove : MonoBehaviour
     public void ResetToStartPosition()
     {
         transform.position = startPosition;
-    }
-
-    public void DisableMovement()
-    {
-        canMove = false;
-    }
-
-    public void EnableMovement()
-    {
-        canMove = true;
     }
 
     private void MoveObject()

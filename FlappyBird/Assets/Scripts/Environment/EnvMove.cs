@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnvMove : MonoBehaviour
 {
 
-    public static float environmentSpeed = 2f;
+    public static float environmentSpeed = 1.2f;
 
     public Vector2 respawnPosition = new Vector2(27f, 0f);
     public float endXPosition = -27f;

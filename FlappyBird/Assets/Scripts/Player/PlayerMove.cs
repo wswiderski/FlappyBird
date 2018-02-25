@@ -9,6 +9,7 @@ public class PlayerMove : MonoBehaviour {
     public float demoFlyTimeFactor = 0.7f;
 
     private Rigidbody2D rb;
+    private bool canMove = true;
 
     private void Awake()
     {
@@ -21,7 +22,7 @@ public class PlayerMove : MonoBehaviour {
         {
             DemoFly();
         }
-        else if (GameManager.GameStage == GameStages.PLAY)
+        else if (GameManager.GameStage == GameStages.PLAY && canMove)
         {
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
@@ -43,6 +44,16 @@ public class PlayerMove : MonoBehaviour {
     public void EnableGravity()
     {
         rb.gravityScale = 1f;
+    }
+
+    public void DisableMove()
+    {
+        canMove = false;
+    }
+
+    public void EnableMove()
+    {
+        canMove = true;
     }
 
     private void DemoFly()

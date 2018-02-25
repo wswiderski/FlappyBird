@@ -13,33 +13,37 @@ public class GameManager : MonoBehaviour {
     private void Start()
     {
         points = 0;
-        gameStage = GameStages.PLAY;
-    }
-
-    private void OnDemoStage()
-    {
         gameStage = GameStages.DEMO;
-        player.DisableGravity();
     }
 
-    private void OnPlayStage()
+    private void DemoStage()
     {
-        gameStage = GameStages.PLAY;
-        player.EnableGravity();
+        player.DisableGravity();
+        gameStage = GameStages.DEMO;
     }
 
-    private void OnGameOverStage()
+    private void PLayStage()
+    {
+        player.EnableGravity();
+        player.EnableMove();
+        player.MoveBirdUp();
+        gameStage = GameStages.PLAY;
+    }
+
+    public void GameOverStage()
     {
         gameStage = GameStages.GAME_OVER;
+        player.DisableMove();
     }
 
     private void ResetGame()
     {
         points = 0;
         gameStage = GameStages.DEMO;
+        DemoStage();
     }
 
-    public static void AddPoint()
+    public void AddPoint()
     {
         points++;
         pointUpdater.UpdatePointsText();

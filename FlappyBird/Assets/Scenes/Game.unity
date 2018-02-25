@@ -233,10 +233,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 1810367006546776, guid: 16c15e8b53fef6c4d9db14417ba140ae, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 16c15e8b53fef6c4d9db14417ba140ae, type: 2}
   m_IsPrefabParent: 0
@@ -494,6 +490,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1209943858}
+  pointUpdater: {fileID: 1861221373}
 --- !u!1 &2119935669
 GameObject:
   m_ObjectHideFlags: 0

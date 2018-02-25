@@ -45,7 +45,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4101584352666682
 Transform:
   m_ObjectHideFlags: 1
@@ -138,8 +138,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba28d04047bf564449d57d3d2aa13939, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 3
-  lengthOfDemoFly: 1
+  force: 2
+  lengthOfDemoFly: 0.6
   demoFlyTimeFactor: 0.7
 --- !u!114 &114679957092112204
 MonoBehaviour:

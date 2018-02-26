@@ -56,6 +56,12 @@ public class PlayerMove : MonoBehaviour {
         canMove = true;
     }
 
+    public void ResetPlayer()
+    {
+        transform.position = new Vector2(0f, 0f);
+        transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+    }
+
     private void DemoFly()
     {
         Vector2 newPosition = new Vector2(0f, Mathf.PingPong(Time.time * demoFlyTimeFactor, lengthOfDemoFly));

@@ -31,4 +31,15 @@ public class ObsticleManager : MonoBehaviour {
             nextObsticle += UnityEngine.Random.Range(timeToNextObsticle.x, timeToNextObsticle.y);
         }
     }
+
+    public static void DeleteAllObsticles()
+    {       
+        if(obsticles.Count == 0) { return; }
+
+        for (int i = 0; i < obsticles.Count; i++)
+        {
+            Destroy(obsticles[i]);
+        }
+        obsticles = new List<GameObject>();
+    }
 }

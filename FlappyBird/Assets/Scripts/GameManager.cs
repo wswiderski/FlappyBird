@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour {
     public PointUpdater pointUpdater;
 
     public Text infoText;
+    public Text retryBtn; 
 
     private static int points = 0;
     private static GameStages gameStage;
@@ -29,13 +30,17 @@ public class GameManager : MonoBehaviour {
         }
     }
 
-    private void DemoStage()
+    public void DemoStage()
     {
         ResetPoint();
+        player.ResetPlayer();
         player.DisableGravity();
 
         infoText.text = INFO_TXT;
         infoText.enabled = true;
+        retryBtn.enabled = false;
+
+        ObsticleManager.DeleteAllObsticles();
 
         gameStage = GameStages.DEMO;
     }
@@ -58,6 +63,7 @@ public class GameManager : MonoBehaviour {
 
         infoText.text = GAME_OVER_INFO_TEXT + points.ToString();
         infoText.enabled = true;
+        retryBtn.enabled = true;
 
         gameStage = GameStages.GAME_OVER;
     }
@@ -68,7 +74,7 @@ public class GameManager : MonoBehaviour {
         pointUpdater.UpdatePointsText();
     }
 
-    public void ResetPoint()
+    private void ResetPoint()
     {
         points = 0;
         pointUpdater.UpdatePointsText();

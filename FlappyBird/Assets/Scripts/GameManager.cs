@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour {
 
     public PlayerMove player;
     public PointUpdater pointUpdater;
+    public Animator animator;
 
     public Text infoText;
     public Text retryBtn; 
@@ -40,6 +41,8 @@ public class GameManager : MonoBehaviour {
         infoText.enabled = true;
         retryBtn.enabled = false;
 
+        animator.SetBool("isBirdBroken", false);
+
         ObsticleManager.DeleteAllObsticles();
 
         gameStage = GameStages.DEMO;
@@ -64,6 +67,8 @@ public class GameManager : MonoBehaviour {
         infoText.text = GAME_OVER_INFO_TEXT + points.ToString();
         infoText.enabled = true;
         retryBtn.enabled = true;
+
+        animator.SetBool("isBirdBroken", true);
 
         gameStage = GameStages.GAME_OVER;
     }

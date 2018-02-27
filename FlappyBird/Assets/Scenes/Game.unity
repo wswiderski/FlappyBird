@@ -233,19 +233,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 114187395070265508, guid: 16c15e8b53fef6c4d9db14417ba140ae,
-        type: 2}
-      propertyPath: rotationDownSpeed
-      value: 70
-      objectReference: {fileID: 0}
-    - target: {fileID: 114187395070265508, guid: 16c15e8b53fef6c4d9db14417ba140ae,
-        type: 2}
-      propertyPath: rotation
-      value: 15
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 16c15e8b53fef6c4d9db14417ba140ae, type: 2}
   m_IsPrefabParent: 0
+--- !u!95 &914575076 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 95878664690241570, guid: 16c15e8b53fef6c4d9db14417ba140ae,
+    type: 2}
+  m_PrefabInternal: {fileID: 247407720}
 --- !u!1001 &1059268145
 Prefab:
   m_ObjectHideFlags: 0
@@ -702,6 +697,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1209943858}
   pointUpdater: {fileID: 1861221373}
+  animator: {fileID: 914575076}
   infoText: {fileID: 1789329308}
   retryBtn: {fileID: 1729643589}
 --- !u!1 &2119935669

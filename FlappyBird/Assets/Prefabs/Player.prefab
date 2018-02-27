@@ -40,6 +40,7 @@ GameObject:
   - component: {fileID: 50331167135252490}
   - component: {fileID: 114187395070265508}
   - component: {fileID: 114679957092112204}
+  - component: {fileID: 114647226480998456}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -161,6 +162,18 @@ MonoBehaviour:
   demoFlyTimeFactor: 0.7
   rotation: 15
   rotationDownSpeed: 70
+--- !u!114 &114647226480998456
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1810367006546776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbf3963639ed9124f87411b0f42bb0e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationBoundaries: {x: 45, y: 280}
 --- !u!114 &114679957092112204
 MonoBehaviour:
   m_ObjectHideFlags: 1

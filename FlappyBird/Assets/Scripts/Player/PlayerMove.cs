@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,6 +8,8 @@ public class PlayerMove : MonoBehaviour {
     public float force = 5f;
     public float lengthOfDemoFly = 1f;
     public float demoFlyTimeFactor = 0.7f;
+    public float rotation = 15f;
+    public float rotationDownSpeed = 70f;
 
     private Rigidbody2D rb;
     private bool canMove = true;
@@ -28,12 +31,24 @@ public class PlayerMove : MonoBehaviour {
             {
                 MoveBirdUp();
             }
+            RotateBirdDown();
         }
     }
 
     public void MoveBirdUp()
     {
         rb.AddForce(Vector2.up * force, ForceMode2D.Impulse);
+        RotateBird();
+    }
+
+    private void RotateBird()
+    {
+        transform.Rotate(Vector3.forward * rotation);
+    }
+
+    private void RotateBirdDown()
+    {
+        rb.MoveRotation(rb.rotation - rotationDownSpeed * Time.deltaTime);
     }
 
     public void DisableGravity()
